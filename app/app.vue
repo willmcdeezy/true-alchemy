@@ -10,11 +10,9 @@
             </h1>
           </div>
           <div class="hidden md:flex space-x-8">
-            <a href="#home" class="text-gray-700 hover:text-purple-600 transition-colors">Home</a>
-            <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
-            <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors">Testimonials</a>
             <a href="#podcast" class="text-gray-700 hover:text-purple-600 transition-colors">Podcast</a>
-            <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition-colors">Testimonials</a>
+            <a href="https://www.youtube.com/@truealchemycoaching" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-purple-600 transition-colors">YouTube</a>
           </div>
         </div>
       </div>
@@ -159,55 +157,56 @@
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-4">
-                <span class="text-white font-semibold">S</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Sarah M.</h4>
-                <p class="text-sm text-gray-600">Marketing Executive</p>
-              </div>
-            </div>
-            <p class="text-gray-700 italic">
-              "True Alchemy coaching completely changed my perspective on life. I've developed healthy habits that stick and finally feel confident in my own skin!"
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <p class="text-gray-700 italic text-sm leading-relaxed">
+              <span v-if="!expanded[0]">
+                "I came to the coaching session somewhat worried but open to find a solution to my rampant anxiety. I had been struggling with fears and worries to the point it was taking a physical toll on my body...
+              </span>
+              <span v-else>
+                "I came to the coaching session somewhat worried but open to find a solution to my rampant anxiety. I had been struggling with fears and worries to the point it was taking a physical toll on my body and was concerned that it was starting to affect my loved ones as well.
+
+When I started the coaching session on zoom, my worries were immediately eased. Melanie was more than kind and showed care towards my struggles. I was not met with judgment towards the things I worried about - which I loved. I felt heard and validated. Melanie taught me tools that I could use to combat my anxiety and made me realize that my hopes and aspirations aren't as impossible as my anxiety made them to be.
+
+I have a long way to go but I am super grateful to Melanie and her coaching. I would definitely recommend to anyone who has similar problems as me to reach out and give it a try."
+              </span>
             </p>
+            <button class="text-purple-600 hover:text-purple-700 text-sm font-semibold mt-2 transition-colors" @click="toggleExpand(0)">
+              {{ expanded[0] ? 'Read less' : 'Read more' }}
+            </button>
             <div class="flex text-yellow-400 mt-4">
               <span>★★★★★</span>
             </div>
           </div>
           
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-4">
-                <span class="text-white font-semibold">J</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Jessica L.</h4>
-                <p class="text-sm text-gray-600">Entrepreneur</p>
-              </div>
-            </div>
-            <p class="text-gray-700 italic">
-              "The mind-body-soul approach is exactly what I needed. I've found my purpose and built a business I love while maintaining work-life balance."
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <p class="text-gray-700 italic text-sm leading-relaxed">
+              <span v-if="!expanded[1]">
+                "First of Thank you Melanie for what you do. I highly recommend Melanie. I myself used to be a bit skeptical if I'm being honest however I have melanie a chance to help me out through some personal problems...
+              </span>
+              <span v-else>
+                "First of Thank you Melanie for what you do. I highly recommend Melanie. I myself used to be a bit skeptical if I'm being honest however I have melanie a chance to help me out through some personal problems I had been struggling with honestly all my life. I literally thought there was no hope for me and that it was just the ways things were because it was literally something I was struggling with for as long as I could remember. I was even able to find a diagnosis online for my problem. Little did I know that through her couching I would finally find freedom, and it's not temporary freedom. It truly helped, trauma is real and can definitely affect your life in so many ways. Trauma that I may not even consider to have been affecting me. Anyway moral of the story, coaching can truly help if your willing to give it a chance. Coming from a skeptical person, allow yourself to be free. We all deserve happiness 🥰 Thank you Melanie ❤️"
+              </span>
             </p>
+            <button class="text-purple-600 hover:text-purple-700 text-sm font-semibold mt-2 transition-colors" @click="toggleExpand(1)">
+              {{ expanded[1] ? 'Read less' : 'Read more' }}
+            </button>
             <div class="flex text-yellow-400 mt-4">
               <span>★★★★★</span>
             </div>
           </div>
           
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-4">
-                <span class="text-white font-semibold">M</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Maria K.</h4>
-                <p class="text-sm text-gray-600">Teacher</p>
-              </div>
-            </div>
-            <p class="text-gray-700 italic">
-              "I was struggling with burnout and self-care. Now I have sustainable habits that energize me and make me a better teacher and person."
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <p class="text-gray-700 italic text-sm leading-relaxed">
+              <span v-if="!expanded[2]">
+                "Working with Melanie has been such a sweet and divine experience! She's perceptive, attentive, and intuitive, so our sessions never go to waste...
+              </span>
+              <span v-else>
+                "Working with Melanie has been such a sweet and divine experience! She's perceptive, attentive, and intuitive, so our sessions never go to waste because she leads me exactly to the places my spirit needs to address in order to overcome my limiting beliefs. Having her in my corner has been worth the investment twice over, and I would recommend that anyone who wants to make significant changes in their life partner with her as a powerful help and guide."
+              </span>
             </p>
+            <button class="text-purple-600 hover:text-purple-700 text-sm font-semibold mt-2 transition-colors" @click="toggleExpand(2)">
+              {{ expanded[2] ? 'Read less' : 'Read more' }}
+            </button>
             <div class="flex text-yellow-400 mt-4">
               <span>★★★★★</span>
             </div>
@@ -224,47 +223,10 @@
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Let's start your journey to a more fulfilling life. Book a free discovery call to see how we can work together.
           </p>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
-            Ready to UNLOCK your True Potential and Create a Brighter Future. Schedule now
-          </p>
           <div>
             <a href="https://calendly.com/melanie_mindsetcoach/30-min-free-consultation" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
               Schedule Now
             </a>
-          </div>
-        </div>
-        
-        <div class="max-w-2xl mx-auto">
-          <div class="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-            <div class="space-y-4">
-              <div class="flex items-center cursor-pointer hover:opacity-80 transition-opacity" @click="copyEmail">
-                <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-4">
-                  <span class="text-white">📧</span>
-                </div>
-                <div class="flex-1">
-                  <div class="flex items-center gap-2">
-                    <p class="font-semibold text-gray-900">Email</p>
-                    <svg v-if="!emailCopied" class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                    </svg>
-                    <svg v-else class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                  </div>
-                  <p id="email-text" class="text-gray-600">truealchemycoaching@gmail.com</p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-4">
-                  <span class="text-white">🐕</span>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Office Assistant</p>
-                  <p class="text-gray-600">Benji (the cutest pup ever!)</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -283,25 +245,25 @@
               Helping women create lasting positive habits and live their best lives.
             </p>
             <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">Instagram</a>
+              <a href="https://www.instagram.com/m_eofficial?igsh=MWJtbW5ubGQyaDA4OQ==" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors">Instagram</a>
               <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">TikTok</a>
-              <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">YouTube</a>
+              <a href="https://www.youtube.com/@truealchemycoaching" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-400 transition-colors">YouTube</a>
             </div>
           </div>
           
           <div>
             <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a href="#about" class="hover:text-purple-400 transition-colors">About</a></li>
-              <li><a href="#testimonials" class="hover:text-purple-400 transition-colors">Testimonials</a></li>
-              <li><a href="#podcast" class="hover:text-purple-400 transition-colors">Podcast</a></li>
-              <li><a href="#contact" class="hover:text-purple-400 transition-colors">Contact</a></li>
+              <li><a href="https://calendly.com/melanie_mindsetcoach/30-min-free-consultation" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">30 minute free session</a></li>
+              <li><a href="https://calendly.com/melanie_mindsetcoach/30min" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">2 day Alchemize</a></li>
+              <li><a href="https://www.buzzsprout.com/2453285/episodes" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">Podcast</a></li>
+              <li><a href="mailto:truealchemycoaching@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
         
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 True Alchemy. All rights reserved. Made with 💜 in Tampa, FL</p>
+          <p>&copy; 2026 True Alchemy. All rights reserved. Made with 💜 in Tampa, FL</p>
         </div>
       </div>
     </footer>
@@ -311,22 +273,10 @@
 <script setup>
 import { ref } from 'vue'
 
-const emailCopied = ref(false)
+const expanded = ref([false, false, false])
 
-const copyEmail = async () => {
-  if (typeof navigator === 'undefined' || !navigator.clipboard) {
-    return
-  }
-  const email = 'truealchemycoaching@gmail.com'
-  try {
-    await navigator.clipboard.writeText(email)
-    emailCopied.value = true
-    setTimeout(() => {
-      emailCopied.value = false
-    }, 2000)
-  } catch (err) {
-    console.error('Failed to copy email:', err)
-  }
+const toggleExpand = (index) => {
+  expanded.value[index] = !expanded.value[index]
 }
 </script>
 
