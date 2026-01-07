@@ -92,8 +92,20 @@
               </p>
             </div>
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://www.buzzsprout.com/2453285/episodes" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer inline-block text-center">
-                Listen Now
+              <a href="https://open.spotify.com/show/5FUE5Vxc4DiehEZdWwgg19" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-[#1DB954] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+                Spotify
+              </a>
+              <a href="https://podcasts.apple.com/us/podcast/the-best-self-revolution/id1805257265" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-16.5c-1.933 0-3.5 1.567-3.5 3.5s1.567 3.5 3.5 3.5 3.5-1.567 3.5-3.5-1.567-3.5-3.5-3.5zm0 5.5c-.827 0-1.5-.673-1.5-1.5S11.173 7.5 12 7.5s1.5.673 1.5 1.5S12.827 11 12 11zm0 2c-2.485 0-4.5 2.015-4.5 4.5 0 .414.336.75.75.75s.75-.336.75-.75c0-1.654 1.346-3 3-3s3 1.346 3 3c0 .414.336.75.75.75s.75-.336.75-.75c0-2.485-2.015-4.5-4.5-4.5z"/>
+                </svg>
+                Apple Podcast
+              </a>
+              <a href="https://www.buzzsprout.com/2453285/episodes" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 border-2 border-purple-600 text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300 cursor-pointer">
+                See More
               </a>
             </div>
           </div>
@@ -223,7 +235,7 @@ I have a long way to go but I am super grateful to Melanie and her coaching. I w
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Let's start your journey to a more fulfilling life. Book a free discovery call to see how we can work together.
           </p>
-          <div>
+                  <div>
             <a href="https://calendly.com/melanie_mindsetcoach/30-min-free-consultation" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
               Schedule Now
             </a>
